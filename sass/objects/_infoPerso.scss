@@ -1,0 +1,18 @@
+/* CV
+ *
+ * /sass/objects/_infoPerso.scss - Non Esthetic style for infoPerso elements
+ *
+ * coded by Mucht!
+ */
+
+.infoPerso{
+    &__bloc{
+        height: 22px;
+        line-height: 17px;
+        margin: 0 0 2px 37px;
+        &::before{
+            height: 23px;
+            width: 37px;
+        }
+    }
+}

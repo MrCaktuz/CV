@@ -1,0 +1,29 @@
+/* CV
+ *
+ * /sass/components/_intro.scss - Esthetic style for Intro
+ *
+ * coded by Mucht!
+ */
+
+.sections{
+    &__title{
+        color: $titleColor;
+        font-family: $motivaStack;
+        font-size: 18px;
+        background-image: url("http://store.akamai.steamstatic.com/public/images/v6/maincol_gradient_rule.png");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+    }
+    &__section{
+        background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(97, 100, 101, 0.3) 0%, rgba(226, 244, 255, 0.3) 100%) repeat scroll 0 0;
+        color: $laborColor;
+        display: block;
+        font-size: 12px;
+        padding: 4px 14px;
+        position: relative;
+    }
+    &__date{
+        float: right;
+        color: $linksColor;
+    }
+}

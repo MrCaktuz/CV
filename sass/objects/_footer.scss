@@ -1,0 +1,18 @@
+/* CV
+ *
+ * /sass/objects/_footer.scss - Non Esthetic style for footer elements
+ *
+ * coded by Mucht!
+ */
+
+.footerElem{
+    margin-bottom: 1.5em;
+    &__button{
+        margin: 0 5px 20px 0;
+        line-height: 20px;
+    }
+}
+
+.signature{
+    margin-top: 40px;
+}

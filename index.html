@@ -5,253 +5,276 @@
 		<meta name="author" content="Mathieu Claessens" />
 		<meta name="description" content="document structural de mon CV sous l'apparence du site steampowered.com/app/278500" />
 		<meta name="keywords" content="Curriculum, 2015, 2016, HEPL, 2285, vitea, mathieu, claessens" />
-		<link rel="stylesheet" href="css/style.css" media="all" />
+		<link rel="stylesheet" href="css/styles.css" media="all" />
 		<title>Mathieu Claessens - Web Designer & Graphiste</title>
 		<!--Inspiré de "Brazzer"-->
 	</head>
 	<body>
 		<header>
 			<div class="globalHeader">
-				<h1 role="heading" aria-level="1">Mucht</h1>
-				<a id="embaucher" href="javascript:alert('Je ne suis pas encore sur le marché ^');" title="Embaucher maintenant">Engager Mathieu</a>
-				<a id="contacter" href="mailto:mathieu_claessens@hotmail.com" title="Envoyer un e-mail">contacter</a>
-				<input type="checkbox" id="ChoixLangue">
-				<label for="ChoixLangue">langue</label>
-				<ul>
-					<li><a href="#">Français</a></li>
-					<li><a href="indexEn.html">English</a></li>
-				</ul>
-			</div> <!-- globalHeader -->
-			<div class="Menu">
-				<nav class="MainMenu">
-					<h2 role="heading" aria-level="2">Menu principal</h2>
-					<input type="checkbox" id="MenuPincipal">
-					<label for="MenuPrincipal"><span>Menu</span></label>
-					<ul>
-						<li><a href="#about">Présentation</a></li>
-						<li><a href="#infoPerso">Info perso</a></li>
-						<li><a href="#galerie">Galeire</a></li>
-						<li><a href="#experiences">Expériences</a></li>
-						<li><a href="#formations">Formations</a></li>
-						<li><a href="#competences">Compétences</a></li>
-						<li><a href="#maitrise">Langues</a></li>
-						<li><a href="#hobbies">Hobbies</a></li>
-						<li>
-							<form class="NavPrinc" method="get" id="search">
-								<label class="hidden" for="recherche">Sélectionner la section&nbsp;: </label>
-								<input type="search" id="recherche" name="sélectionner la section" maxlength="50" size="21" placeholder="Chercher rapide">
-								<input class="NavPrinc" type="submit" id="submit" name="Aller">
-							</form>
-						</li>
-					</ul>
-				</nav> <!-- MainMenu -->
-			</div> <!-- Menu -->
-		</header>
-		<div class="MainWrap">
-			<div class="topContent">
-				<section id="about">
-					<span class="Ariane">Tous les candidats > Compétants > Le meilleur choix</span>
-					<h2 role="heading" aria-level="2">Mathieu Claessens</h2>
-					<img src="img/Profil.jpg" alt="Mon portrait personel" width="400" height="187">
-					<p>Je suis le dernier d'une famille de 3 enfants. &Eacute;levé par des parents professeurs d'éducation physique, le sport à toujours été présent dans ma vie et mon hygiène de vie occuper une place importante. Je suis proche de ma famille et elle est très importante pour moi. Une éducation seine &agrave; fait de moi la personne équilibré et heureuse que je suis.</p>
-				</section> <!-- about -->
+                <div class="content">
+                    <div class="logo">
+                        <span>
+                            <a href="#">
+                                <img src="./assets/img/logoOriginal.png" alt="Mucht" width="176" height="44"/>
+                            </a>
+                        </span>
+                    </div><!-- logo -->
+                    <div class="globalActions">
+                        <div class="globalActionMenu">
+                            <a class="hire" href="javascript:alert('Je ne suis pas encore sur le marché ^');" title="Embaucher maintenant">Engager Mathieu</a>
+                        </div> <!-- globalActionMenu -->
+                        <a class="contact" href="mailto:mathieu_claessens@hotmail.com" title="Envoyer un e-mail">contacter</a>
+                        <span class="langue" >langue</span>
+                    </div><!-- globalActions -->
 
-				<section class="galerie">
-					<h2 role="heading" aria-level="2" class="hidden">Portfolio</h2>
-                    <!-- Not done yet -->
-				</section> <!-- galerie -->
+                </div><!-- content -->
+			</div> <!-- globalHeader -->
+		</header>
+		<div class="mainWrap">
+            <div class="menu">
+                <div class="content">
+                    <nav class="mainMenu">
+                        <h2 class="hidden" role="heading" aria-level="2">Menu principal</h2>
+                        <a class="mainMenu__links" href="#about">Présentation</a>
+                        <a class="mainMenu__links" href="#infoPerso">Info perso</a>
+                        <a class="mainMenu__links" href="#experiences">Expériences</a>
+                        <a class="mainMenu__links" href="#formations">Formations</a>
+                        <a class="mainMenu__links" href="#skills">Compétences</a>
+                        <a class="mainMenu__links" href="#languages">Langues</a>
+                        <div class="mainMenu__search">
+                            <form class="NavPrinc" method="get" id="search">
+                                <label class="hidden" for="recherche">Sélectionner la section&nbsp;: </label>
+                                <input class="mainMenu__search--box" type="search" id="recherche" name="sélectionner la section" maxlength="50" size="21" placeholder="Chercher rapide">
+                                <input class="mainMenu__search--submit" type="submit" id="submit" name="Aller">
+                            </form>
+                        </div><!-- search -->
+                    </nav> <!-- MainMenu -->
+                </div><!-- content -->
+			</div> <!-- Menu -->
+			<div class="topContent clear" id="about">
+				<div class="title">
+                    <p class="breadcrumb">
+                        Tous les candidats
+                        <span class="breadcrumb__icon"> > </span>
+                        Compétants
+                        <span class="breadcrumb__icon"> > </span>
+                        Le meilleur choix
+                    </p>
+					<h1 class="name" role="heading" aria-level="2">Mathieu Claessens</h1>
+				</div>
+                <div class="wrap clear">
+                    <div class="bcg clear">
+                        <div class="persoInfo">
+                            <img class="persoInfo__img" src="./assets/img/Profil.jpg" alt="Mon portrait personel">
+        					<p class="persoInfo__description">Je suis le dernier d'une famille de 3 enfants. &Eacute;levé par des parents professeurs d'éducation physique, le sport à toujours été présent dans ma vie et mon hygiène de vie occuper une place importante. Je suis proche de ma famille et elle est très importante pour moi. Une éducation seine &agrave; fait de moi la personne équilibré et heureuse que je suis.</p>
+                        </div>
+        				<div class="galery">
+        					<h2 role="heading" aria-level="2" class="hidden">Portfolio</h2>
+                            <div class="galery__photo">
+                                <img src="./assets/img/galeryProject4.png" alt="" width="600" height="340"/>
+                            </div>
+                            <div class="galery__miniatures">
+                                <div class="galery__miniature">
+                                    <img src="./assets/img/galeryProject1.png" alt="" width="116" height="66">
+                                </div>
+                                <div class="galery__miniature">
+                                    <img src="./assets/img/galeryProject2.png" alt="" width="116" height="66">
+                                </div>
+                                <div class="galery__miniature">
+                                    <img src="./assets/img/galeryProject3.png" alt="" width="116" height="66">
+                                </div>
+                                <div class="galery__miniature galery__miniature--active">
+                                    <img src="./assets/img/galeryProject4.png" alt="" width="116" height="66">
+                                </div>
+                                <div class="galery__miniature">
+                                    <img src="./assets/img/galeryProject5.png" alt="" width="116" height="66">
+                                </div>
+                            </div>
+        				</div> <!-- galerie -->
+                    </div>
+                </div>
 			</div> <!-- TopContent -->
 
-			<div class="MainContent">
-				<section id="experiences">
-					<h2 role="heading" aria-level="2">Expériences</h2>
-					<ol>
-						<li>
-							<section class="exp">
-                                <h3 role="heading" aria-level="3">Université de Liège</h3>
-                                <ol>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4">Réceptionniste</h4>
-        									<p class="duree">Juin 2014 - Actuellement</p>
-        									<p class="descript">Réception des nouveaux arrivants - Payement des loyers - Sécurité - Gestion de conflits - Relations sociales - Anglais</p>
-    									</section>
-    								</li>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4">Comité étudiant</h4>
-        									<p class="duree">Septembre 2012 - Juin 2013</p>
-        									<p class="descript">Organisation événementielle - Travail en équipe - Barman - Entretien - Nettoyage - Gestion de stock</p>
-    									</section>
-    								</li>
-    							</ol>
-							</section> <!-- class = exp -->
-						</li>
-						<li>
-							<section class="exp">
-                                <h3 role="heading" aria-level="3"><abbr title="Admninistration de l'&Eacute;ducation Physique et des Sports">ADEPS</abbr> - Centre de Loverval</h3>
-                                <ol>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4">Moniteur sportif</h4>
-        									<p class="duree">Juillet 2011 - Aôut 2012</p>
-        									<p class="descript">Basketball - Multi-sport - Travail en équipe - Gestion d’un groupe - Pédagogie sportive - Education à la santé</p>
-    									</section>
-    								</li>
-    							</ol>
-							</section> <!-- class = exp -->
-						</li>
-						<li>
-							<section class="exp">
-                                <h3 role="heading" aria-level="3"><abbr title="Bureau &Eacute;conomique de la province">BEP</abbr> - Hastière</h3>
-                                <ol>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4">Valoriste</h4>
-        									<p class="duree">Juillet/Aôut 2008 - 2011</p>
-        									<p class="descript">Gestion d’un parc - Recyclage - Tri des déchets - Sécurité - Surveillance</p>
-    									</section>
-    								</li>
-    							</ol>
-							</section> <!-- class = exp -->
-						</li>
-						<li>
-							<section class="exp">
-                                <h3 role="heading" aria-level="3">Lounge casino - Dinant</h3>
-                                <ol>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4" role="heading" aria-level="4">Serveur</h4>
-        									<p class="duree">Juillet 2008 - Aôut 2008</p>
-        									<p class="descript">Travail en équipe - Bonne présentation - Prise de recul - Hygiène corporelle </p>
-    									</section>
-    								</li>
-    							</ol>
-							</section> <!-- class = exp -->
-						</li>
-						<li>
-							<section class="exp">
-                                <h3 role="heading" aria-level="3">Royal basket club - Ciney</h3>
-                                <ol>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4">Joueur de Basketball</h4>
-        									<p class="duree">Aôut 1998 - Actuellement</p>
-        									<p class="descript">Travail en équipe - Hygiène de vie - Leadership</p>
-    									</section>
-    								</li>
-    							</ol>
-							</section> <!-- class = exp -->
-						</li>
-					</ol>
+            <div class="legend">
+                <p><span class="link">Connectez-vous</span> pour ajouter cet article à votre liste de souhaits, le suivre, ou indiquer que vous n'êtes pas intéressé</p>
+            </div>
+
+			<div class="wrap clear">
+                <aside class="sideContent">
+                    <h2 role="heading" aria-level="2" class="hidden">SideBar</h2>
+    				<section class="infoPerso sideContent__box" id="infoPerso">
+    					<h3 role="heading" aria-level="3" class="hidden">Informations personnelles</h3>
+    					<address itemscope itemtype="http://schema.org/PostalAddress">
+                            <div class="infoPerso__bloc infoPerso__bloc--adress">
+                                <p class="adresse"><span itemprop="streetAddress">23 rue Gailaipont </span><span itemprop="postalAddress">5520</span> Onhaye <span itemprop="addressCountry">Belgique</span></p>
+                            </div>
+                            <div class="infoPerso__bloc infoPerso__bloc--mail">
+                                <p><a href="mailto:mathieu_claessens@hotmail.com" title="Envoyer un e-mail">mathieu_claessens@hotmail.com</a></p>
+                            </div>
+    						<div class="infoPerso__bloc infoPerso__bloc--phone">
+    						    <p class="telephone"><span itemprop="telephone">+32 476 52 42 85</span></p>
+    						</div>
+    					</address>
+                        <div class="infoPerso__bloc infoPerso__bloc--birth">
+                            <p>04 avril 1992</p>
+                        </div>
+                        <div class="infoPerso__bloc infoPerso__bloc--licence">
+                            <p>Permis B</p>
+                        </div>
+    				</section>
+
+    				<section class="table table--languages sideContent__box" id="languages">
+    					<h3 class="table__title" role="heading" aria-level="3">Langues :</h3>
+    					<table>
+					        <thead class="table__head">
+                                <tr class="table__tableRow">
+    					            <th class="table__headerCol"></th>
+    					            <th class="table__bodyCol table__bodyCol--header">Scolaire</th>
+    					            <th class="table__bodyCol table__bodyCol--header">Courant</th>
+    					            <th class="table__bodyCol table__bodyCol--header">Maternelle</th>
+    					        </tr>
+					        </thead>
+                            <tbody class="table__body">
+                                <tr class="table__tableRow">
+                                    <th class="table__headerCol">Français</th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                </tr>
+                                <tr class="table__tableRow">
+                                    <th class="table__headerCol">Anglais</th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                </tr>
+                                <tr class="table__tableRow">
+                                    <th class="table__headerCol">Néerlandais</th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                </tr>
+    					    </tbody>
+    					</table>
+    				</section> <!-- Languages -->
+
+                    <section class="table table--skills sideContent__box" id="skills">
+    					<h3 class="table__title" role="heading" aria-level="3">Compétences :</h3>
+    					<table>
+					        <thead class="table__head">
+                                <tr class="table__tableRow">
+    					            <th class="table__headerCol"></th>
+    					            <th class="table__bodyCol table__bodyCol--header">Basique</th>
+    					            <th class="table__bodyCol table__bodyCol--header">Bon</th>
+    					            <th class="table__bodyCol table__bodyCol--header">Supérieur</th>
+    					        </tr>
+					        </thead>
+                            <tbody class="table__body">
+                                <tr class="table__tableRow">
+                                    <th class="table__headerCol"><abbr title="Hypertext Markup Language">HTML</abbr> 5</th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                </tr>
+                                <tr class="table__tableRow">
+                                    <th class="table__headerCol"><abbr title="Cascading Style Sheets">CSS</abbr> 3</th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                </tr>
+                                <tr class="table__tableRow">
+                                    <th class="table__headerCol">Javascript</th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                </tr>
+                                <tr class="table__tableRow">
+                                    <th class="table__headerCol">PHP</th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                </tr>
+                                <tr class="table__tableRow">
+                                    <th class="table__headerCol">WordPress</th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                    <th class="table__bodyCol"></th>
+                                </tr>
+    					    </tbody>
+    					</table>
+    				</section> <!-- Languages -->
+    			</aside>
+
+				<section class="sections sections--experiences" id="experiences">
+					<h2 class="sections__title" role="heading" aria-level="2">Expériences</h2>
+                    <div class="sections__section">
+                        Réceptionniste - Résidence universitaire de Liège
+                        <span class="sections__date">Juin 2014, actuellement</span>
+                    </div>
+                    <div class="sections__section">
+                        Membre actif du comité étudiant - Résidence universitaire de Liège
+                        <span class="sections__date">Septembre 2012, juin 2013</span>
+                    </div>
+                    <div class="sections__section">
+                        Moniteur sportif - <abbr title="Admninistration de l'&Eacute;ducation Physique et des Sports">ADEPS</abbr>
+                        <span class="sections__date">Juillet 2011, août 2012</span>
+                    </div>
+                    <div class="sections__section">
+                        <abbr title="Bureau &Eacute;conomique de la province">BEP</abbr> - Valoriste
+                        <span class="sections__date">Juillet 2008, août 2011</span>
+                    </div>
+                    <div class="sections__section">
+                        Serveur - Lounge casino de Dinant
+                        <span class="sections__date">Juillet 2008, août 2008</span>
+                    </div>
+                    <div class="sections__section">
+                        Joueur de basket - Royal basketball club de Ciney
+                        <span class="sections__date">Août 1998, actuellement</span>
+                    </div>
 				</section> <!-- Expériences -->
 
-				<section id="formations">
-					<h2 role="heading" aria-level="2">Formations</h2>
-					<ol>
-						<li>
-							<section class="formation">
-                                <h3 role="heading" aria-level="3"><abbr title="Haute &Eacute;cole de la Province de Liège">HEPL</abbr></h3>
-                                <ol>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4">Baccalauréat en techniques graphiques</h4>
-        									<p class="duree">Septembre 2014 - Juin 2017</p>
-        									<p class="descript">Option Web Design - Responsive design - Ergonomie web - Accessibilité web - Configuration de réseau - Spip - Apache - Php - Mysql</p>
-    									</section>
-    								</li>
-    							</ol>
-							</section> <!-- class = formation -->
-						</li>
-						<li>
-							<section class="formation">
-                                <h3 role="heading" aria-level="3">Université de Liège</h3>
-                                <ol>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4">Baccalauréat en kinésithérapie</h4>
-        									<p class="duree">Septembre 2011 - Juin 2013</p>
-        									<p class="descript">Interrompu en deuxième année - Hygiène de vie - Maturité</p>
-    									</section>
-    								</li>
-    							</ol>
-							</section> <!-- class = formation -->
-						</li>
-						<li>
-                            <section class="formation">
-                                <h3 role="heading" aria-level="3">Bonduel High School - Winsconsin (USA)</h3>
-                                <ol>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4">Certifivate of completion</h4>
-        									<p class="duree">Aôut 2010 - Juin 2011</p>
-        									<p class="descript">Flexibilité - Langue anglaise - Ouverture d’esprit - Savoir vivre - Autonomie - Indépendance</p>
-    									</section>
-    								</li>
-    							</ol>
-                            </section> <!-- class = formation -->
-						</li>
-						<li>
-                            <section class="formation">
-                                <h3 role="heading" aria-level="3">Athénée Royal - Beauraing</h3>
-                                <ol>
-    								<li>
-    									<section>
-                                            <h4 role="heading" aria-level="4"><abbr title="Certificat d'Enseignement Secondaire Supérieur">CESS</abbr></h4>
-        									<p class="duree">Septembre 2004 - Juin 2010</p>
-        									<p class="descript">Sciences fortes - Anglais - Néerlandais</p>
-    									</section>
-    								</li>
-    							</ol>
-                            </section> <!-- class = formation -->
-						</li>
-					</ol>
+				<section class="sections sections--formations" id="formations">
+					<h2 class="sections__title" role="heading" aria-level="2">Formations</h2>
+                    <div class="sections__section">
+                        Baccalauréat en techniques graphiques (web Design) - <abbr title="Haute &Eacute;cole de la Province de Liège">HEPL</abbr>
+                        <span class="sections__date">Septembre 2014, juin 2017</span>
+                    </div>
+                    <div class="sections__section">
+                        Baccalauréat en kinésithérapie (Interrompu en deuxième) - Université de Liège
+                        <span class="sections__date">Septembre 2011, juin 2013</span>
+                    </div>
+                    <div class="sections__section">
+                        Certifivate of completion - Bonduel Hight School (USA)
+                        <span class="sections__date">Août 2010, juin 2011</span>
+                    </div>
+                    <div class="sections__section">
+                        <abbr title="Certificat d'Enseignement Secondaire Supérieur">CESS</abbr> - Athénée Royal de Beauraing
+                        <span class="sections__date">Septembre 2004, juin 2010</span>
+                    </div>
 				</section> <!-- Formations -->
-			</div> <!-- MainContent -->
 
-			<aside>
-                <h2 role="heading" aria-level="2" class="hidden">SideBar</h2>
-				<section id="infoPerso">
-					<h3 role="heading" aria-level="3" class="hidden">Informations personnelles</h3>
-					<address itemscope itemtype="http://schema.org/PostalAddress">
-						<p class="adresse"><span itemprop="streetAddress">Rue Gailaipont, 23 </span><span itemprop="postalAddress">5520</span> Onhaye <span itemprop="addressCountry">Belgique</span></p>
-						<p class="email"><a href="mailto:mathieu_claessens@hotmail.com" title="Envoyer un e-mail">mathieu_claessens@hotmail.com</a></p>
-						<p class="telephone"><span itemprop="telephone">+32 (0)476 52 42 85</span></p>
-					</address>
-					<p class="naissance">04 avril 1992</p>
-					<p class="permis">Permis B</p>
-				</section>
-
-				<section id="maitrise">
-					<h3 role="heading" aria-level="3">Maitrise linguistique</h3>
-					<ul>
-						<li>Anglais&nbsp;: courant</li>
-						<li>Néerlandais&nbsp;: scolaire</li>
-					</ul>
-				</section> <!-- Maitrise linguistique -->
-
-				<section id="competences">
-					<h3 role="heading" aria-level="3">Compétences</h3>
-					<ul>
-						<li>Responsive design</li>
-						<li>Typographie</li>
-						<li>Illustrator</li>
-						<li>Maya 2015</li>
-						<li><abbr title="Hypertext Markup Language">HTML</abbr> 5</li>
-						<li><abbr title="Cascading Style Sheets">CSS</abbr> 3</li>
-					</ul>
-				</section> <!-- Compétences -->
-
-				<section id="hobbies">
-					<h3 role="heading" aria-level="3">Hobbies</h3>
-					<ul>
-						<li>Sport d'équipe</li>
-						<li>Basketball</li>
-						<li>Musique</li>
-						<li>E-sport</li>
-					</ul>
-				</section> <!-- Hobbies -->
-			</aside>
+			</div> <!-- wrap -->
 		</div> <!-- MainWrap -->
+        <footer class="footer">
+            <div class="wrap">
+                <div class="footerElem footerElem--nav">
+                    <a class="footerElem__button footerElem__button--nav" href="#about">PR&Eacute;SENTATION</a>
+                    <a class="footerElem__button footerElem__button--nav" href="#infoPerso">INFO PERSO</a>
+                    <a class="footerElem__button footerElem__button--nav" href="#experiences">EXP&Eacute;RIENCES</a>
+                    <a class="footerElem__button footerElem__button--nav" href="#formations">FORMATIONS</a>
+                    <a class="footerElem__button footerElem__button--nav" href="#skills">COMP&Eacute;TENCES</a>
+                    <a class="footerElem__button footerElem__button--nav" href="#languages">LANGUES</a>
+                </div>
+                <div class="footerElem footerElem--socials">
+                    <a class="footerElem__links" href="https://github.com/Mucht"><span class="footerElem__icons"> </span>Github</a>
+                    <a class="footerElem__links" href="https://www.linkedin.com/in/mathieuclaessens"><span class="footerElem__icons"> </span>Linkedin</a>
+                    <a class="footerElem__links" href="https://www.behance.net/mathieuclaessens"><span class="footerElem__icons"> </span>Behance</a>
+                    <a class="footerElem__links" href="https://www.facebook.com/mathieu.claessens"><span class="footerElem__icons"> </span>Facebook</a>
+                </div>
+                <div class="signature">
+                    <small>&copy; Designed by Mucht copying steam website</small>
+                </div>
+            </div>
+        </footer>
 	</body>
 </html>

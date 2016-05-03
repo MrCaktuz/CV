@@ -1,0 +1,32 @@
+/* CV
+ *
+ * /sass/components/_languages.scss - Esthetic style for langages
+ *
+ * coded by Mucht!
+ */
+
+.table{
+    &__body{
+        display: table-row-group;
+        vertical-align: middle;
+    }
+    &__tableRow{
+        display: table-row;
+        vertical-align: inherit;
+        border-bottom: 1px solid $languageSeparatorsColor;
+    }
+    &__headerCol{
+        text-align: left;
+        padding: 3px 0;
+    }
+    &__bodyCol{
+        padding: 3px 0;
+        font-family: $glyphs;
+        color: $languagesIconColor;
+        &--header{
+            padding: 0;
+            font-family: $motivaStack;
+            color: $laborColor;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+/* CV
+ *
+ * /sass/components/_aside.scss - Esthetic style for aside
+ *
+ * coded by Mucht!
+ */
+
+.sideContent{
+    font-size: 1.2em;
+    float: right;
+    &__box{
+        background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%) repeat scroll 0 0;
+        padding: 16px;
+    }
+}

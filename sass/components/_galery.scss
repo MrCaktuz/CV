@@ -1,0 +1,40 @@
+/* CV
+ *
+ * /sass/components/_galery.scss - Esthetic style for galery
+ *
+ * coded by Mucht!
+ */
+
+.galery{
+    float: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 1px;
+    &__photo{
+        margin-bottom: 7px;
+    }
+    &__miniature{
+        margin-right: 2px;
+        display: inline-block;
+        &:last-child{
+            margin-right: 0;
+        }
+        &--active{
+            position: relative;
+            img{
+                border: 3px solid $galeryActiveColor;
+            }
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: -40px;
+                left: 38px;
+                border: 2em solid transparent;
+                border-bottom-color: $galeryActiveColor;
+            }
+        }
+    }
+}

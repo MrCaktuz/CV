@@ -1,0 +1,53 @@
+/* CV
+ *
+ * /sass/components/_footer.scss - Esthetic style for footer element
+ *
+ * coded by Mucht!
+ */
+
+.footer{
+    padding: 40px 0 1px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%) repeat scroll 0 0;
+}
+
+.footerElem{
+    &__button{
+        background: rgba(103, 193, 245, 0.2) none repeat scroll 0 0;
+        border-radius: 2px;
+        color: $navColor;
+        display: inline-block;
+        font-size: 12px;
+        padding: 0 15px;
+        &:hover{
+            background: linear-gradient(135deg, $hoverBackgroundColor 0%, $gradientBackgroundColor 100%) repeat scroll 0 0;
+            color: $linksColor;
+        }
+    }
+    &__links{
+        font-size: 13px;
+        color: $legendColor;
+        padding: 0 1em;
+        border-right: 1px solid $lightTextColor;
+        &:first-child{
+            padding-left: 0;
+        }
+        &:last-child{
+            border-right: none;
+        }
+        &--nav{
+            font-size: 12px;
+        }
+        &:hover{
+            color: $linksColor;
+        }
+    }
+    &__icons{
+        font-family: $glyphs;
+        color: $languagesIconColor;
+    }
+}
+
+.signature{
+    color: $copyColor;
+    text-align: center;
+}

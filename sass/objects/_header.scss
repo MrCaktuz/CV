@@ -1,0 +1,40 @@
+/* CV
+ *
+ * /sass/objects/_header.scss - Non Esthetic style for header
+ *
+ * coded by Mucht!
+ */
+
+.globalHeader{
+    min-width: $widthDesktop;
+    .content{
+        width: $widthDesktop;
+        height: 104px;
+        margin: 0 auto;
+        .logo{
+            width: 176px;
+            height: 44px;
+            margin-right: 40px;
+        }
+        .globalActions{
+            height: 21px;
+                .globalIconHire{
+                    height: 21px;
+                    line-height: 21px;
+                    margin-right: 3px;
+                }
+                .hire{
+                    height: 21px;
+                }
+                .hier::before{
+                    height: 20px;
+                }
+            .contact{
+
+            }
+            .langue{
+
+            }
+        }
+    }
+}

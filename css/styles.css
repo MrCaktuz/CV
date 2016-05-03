@@ -1,0 +1,686 @@
+@charset "UTF-8";
+/* Curriculom Vitae
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+/* Curriculom Vitae
+ *
+ * /sass/settings/_paths.scss - Global paths variables
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+/* Curriculom Vitae
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+/* Curriculom Vitae
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-regular-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-italic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-semibold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot");
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../assets/fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../assets/fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Curriculom Vitae
+ *
+ * /sass/settings/_sizes.scss - Global sizes variables
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+/* Curriculom Vitae
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+.hidden {
+  display: none; }
+
+/* Curriculom Vitae
+ *
+ * /sass/generic/_meyer-reset.scss - Eric Meyer's CSS reset - http://meyerweb.com/eric/tools/css/reset/
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Curriculom Vitae
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Curriculom Vitae
+  *
+  * /sass/base/_root.scss - Base styles for root element
+  *
+  * coded by Mucht
+  * started at 17/02/2016
+  */
+html {
+  background: #1B2838;
+  font: normal 62.5%/1.25 "Motiva Sans", Arial, Helvetica, Verdana, sans-serif;
+  color: #b8b6b4; }
+
+a {
+  color: #FFF;
+  text-decoration: none; }
+
+.hidden {
+  display: none; }
+
+.clear::after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.mainWrap {
+  background-image: url("../assets/img/bckg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/* CV
+ *
+ * /sass/objects/_global.scss - Non Esthetic style for globals elements
+ *
+ * coded by Mucht!
+ */
+.wrap {
+  width: 940px;
+  margin: 32px auto 47px;
+  position: relative;
+  clear: both; }
+
+/* CV
+ *
+ * /sass/objects/_header.scss - Non Esthetic style for header
+ *
+ * coded by Mucht!
+ */
+.globalHeader {
+  min-width: 940px; }
+  .globalHeader .content {
+    width: 940px;
+    height: 104px;
+    margin: 0 auto; }
+    .globalHeader .content .logo {
+      width: 176px;
+      height: 44px;
+      margin-right: 40px; }
+    .globalHeader .content .globalActions {
+      height: 21px; }
+      .globalHeader .content .globalActions .globalIconHire {
+        height: 21px;
+        line-height: 21px;
+        margin-right: 3px; }
+      .globalHeader .content .globalActions .hire {
+        height: 21px; }
+      .globalHeader .content .globalActions .hier::before {
+        height: 20px; }
+
+/* CV
+ *
+ * /sass/objects/_nav.scss - Non Esthetic style for navigation
+ *
+ * coded by Mucht!
+ */
+.menu {
+  min-width: 940px; }
+  .menu .content {
+    width: 940px;
+    height: 35px;
+    margin: 0 auto; }
+    .menu .content .mainMenu__links {
+      line-height: 33px; }
+    .menu .content .mainMenu__search {
+      width: 216px;
+      height: 30px;
+      margin: 3px 4px 2px; }
+      .menu .content .mainMenu__search--box {
+        width: 180px;
+        line-height: 26px;
+        margin-left: 8px;
+        margin-top: 2px; }
+      .menu .content .mainMenu__search--submit {
+        width: 24px;
+        height: 27px; }
+
+/* CV
+ *
+ * /sass/objects/_intro.scss - Non Esthetic style for Intro
+ *
+ * coded by Mucht!
+ */
+.mainWrap {
+  padding-top: 30px; }
+  .mainWrap .topContent {
+    margin: 30px auto 0; }
+    .mainWrap .topContent .title {
+      width: 940px;
+      margin: 0 auto; }
+      .mainWrap .topContent .title .name {
+        min-height: 46px; }
+    .mainWrap .topContent .wrap {
+      width: 940px;
+      margin: 0 auto; }
+      .mainWrap .topContent .wrap .bcg {
+        width: 940px;
+        margin: 0 auto; }
+        .mainWrap .topContent .wrap .bcg .persoInfo {
+          width: 324px; }
+          .mainWrap .topContent .wrap .bcg .persoInfo__img {
+            width: 100%; }
+          .mainWrap .topContent .wrap .bcg .persoInfo__description {
+            margin-top: 10px;
+            line-height: 18px; }
+  .mainWrap .legend {
+    width: 940px;
+    margin: 0 auto; }
+
+/* CV
+ *
+ * /sass/objects/_galery.scss - Non Esthetic style for galery
+ *
+ * coded by Mucht!
+ */
+.galery {
+  width: 600px;
+  height: 430px;
+  margin-right: 16px; }
+
+/* CV
+ *
+ * /sass/objects/_sections.scss - Non Esthetic style for sections elements
+ *
+ * coded by Mucht!
+ */
+.sections {
+  width: 616px;
+  margin-bottom: 60px; }
+  .sections__title {
+    line-height: 26px;
+    margin-bottom: 1px; }
+  .sections__section {
+    margin-bottom: 1px; }
+
+/* CV
+ *
+ * /sass/objects/_aside.scss - Non Esthetic style for aside elements
+ *
+ * coded by Mucht!
+ */
+.sideContent {
+  width: 308px; }
+  .sideContent__box {
+    margin: 0 0 8px 0; }
+
+/* CV
+ *
+ * /sass/objects/_infoPerso.scss - Non Esthetic style for infoPerso elements
+ *
+ * coded by Mucht!
+ */
+.infoPerso__bloc {
+  height: 22px;
+  line-height: 17px;
+  margin: 0 0 2px 37px; }
+  .infoPerso__bloc::before {
+    height: 23px;
+    width: 37px; }
+
+/* CV
+ *
+ * /sass/objects/_languages.scss - Non Esthetic style for languages
+ *
+ * coded by Mucht!
+ */
+.table__headerCol {
+  width: 94px; }
+
+.table__bodyCol {
+  width: 62px; }
+
+/* CV
+ *
+ * /sass/objects/_footer.scss - Non Esthetic style for footer elements
+ *
+ * coded by Mucht!
+ */
+.footerElem {
+  margin-bottom: 1.5em; }
+  .footerElem__button {
+    margin: 0 5px 20px 0;
+    line-height: 20px; }
+
+.signature {
+  margin-top: 40px; }
+
+/* CV
+ *
+ * /sass/objects/_global.scss - Non Esthetic style for globals elements
+ *
+ * coded by Mucht!
+ */
+/* CV
+ *
+ * /sass/components/_header.scss - Esthetic style for header
+ *
+ * coded by Mucht!
+ */
+.globalHeader {
+  background: #171a21;
+  font-family: "Motiva Sans", Arial, Helvetica, Verdana, sans-serif;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px; }
+  .globalHeader .content {
+    position: relative; }
+    .globalHeader .content .logo {
+      float: left;
+      padding-top: 30px; }
+    .globalHeader .content .globalActions {
+      color: #b8b6b4;
+      font-size: 11px;
+      line-height: 21px;
+      position: absolute;
+      right: 0;
+      top: 6px; }
+      .globalHeader .content .globalActions .globalActionMenu {
+        display: inline-block;
+        vertical-align: middle; }
+        .globalHeader .content .globalActions .globalActionMenu .hire {
+          position: relative;
+          background-image: url("../assets/img/iconeHire.png");
+          background-position: 0 -21px;
+          background-repeat: repeat-x;
+          color: #e5e4dc;
+          display: inline-block;
+          font-weight: normal;
+          line-height: 21px;
+          padding-left: 27px;
+          padding-right: 7px;
+          text-decoration: none; }
+        .globalHeader .content .globalActions .globalActionMenu .hire::before {
+          content: "coucou";
+          color: transparent;
+          position: absolute;
+          left: 0;
+          display: block;
+          background-image: url("../assets/img/iconeHire.png");
+          background-position: 0 1px;
+          background-repeat: no-repeat; }
+      .globalHeader .content .globalActions .contact {
+        color: #b8b6b4;
+        padding-left: 10px; }
+      .globalHeader .content .globalActions .contact::after {
+        content: "|";
+        color: #b8b6b4;
+        padding: 0 10px; }
+      .globalHeader .content .globalActions .langue::after {
+        content: "";
+        font-family: "Glyphs";
+        padding-left: 5px; }
+
+/* CV
+ *
+ * /sass/components/_nav.scss - Esthetic style for navigation
+ *
+ * coded by Mucht!
+ */
+.menu {
+  display: block;
+  background-color: transparent;
+  padding: 0; }
+  .menu .content {
+    position: relative;
+    background-color: rgba(103, 193, 245, 0.4); }
+    .menu .content .mainMenu__links {
+      padding: 1px 15px;
+      text-decoration: none;
+      border-right: 1px solid #000;
+      float: left;
+      color: #67c1f5;
+      display: block;
+      font-size: 12px; }
+    .menu .content .mainMenu__links:hover {
+      background: linear-gradient(135deg, #4AABEE 0%, #417a9b 100%) repeat scroll 0 0;
+      color: #FFF; }
+    .menu .content .mainMenu__search {
+      float: right;
+      background-image: url("../assets/img/search.png");
+      color: #b8b6b4;
+      position: relative; }
+      .menu .content .mainMenu__search--box {
+        color: #305d8a;
+        font-style: italic;
+        background-color: transparent;
+        border: medium none;
+        outline: medium none; }
+      .menu .content .mainMenu__search--submit {
+        position: absolute;
+        right: 2px;
+        top: 1px;
+        background-color: transparent;
+        border: none;
+        color: transparent; }
+
+/* CV
+ *
+ * /sass/components/_intro.scss - Esthetic style for Intro
+ *
+ * coded by Mucht!
+ */
+.mainWrap {
+  padding-top: 30px; }
+  .mainWrap .topContent {
+    background-image: url("../assets/img/gradian.png");
+    background-position: bottom;
+    background-repeat: no-repeat; }
+    .mainWrap .topContent .title .breadcrumb {
+      color: #8f98a0;
+      font-size: 12px; }
+      .mainWrap .topContent .title .breadcrumb__icon {
+        color: #61686d; }
+    .mainWrap .topContent .title .name {
+      color: #FFF;
+      font-size: 26px;
+      line-height: 32px; }
+    .mainWrap .topContent .bcg {
+      background: transparent linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.4) 100%) repeat scroll 0 0; }
+      .mainWrap .topContent .bcg .persoInfo {
+        float: right; }
+        .mainWrap .topContent .bcg .persoInfo__description {
+          font-size: 13px;
+          padding-right: 16px;
+          color: #FFF; }
+  .mainWrap .legend {
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    color: #BDD4DF;
+    font-size: 12px;
+    padding: 16px; }
+    .mainWrap .legend .link {
+      color: white; }
+
+/* CV
+ *
+ * /sass/components/_galery.scss - Esthetic style for galery
+ *
+ * coded by Mucht!
+ */
+.galery {
+  float: left;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 1px; }
+  .galery__photo {
+    margin-bottom: 7px; }
+  .galery__miniature {
+    margin-right: 2px;
+    display: inline-block; }
+    .galery__miniature:last-child {
+      margin-right: 0; }
+    .galery__miniature--active {
+      position: relative; }
+      .galery__miniature--active img {
+        border: 3px solid #D5D7D8; }
+      .galery__miniature--active::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -40px;
+        left: 38px;
+        border: 2em solid transparent;
+        border-bottom-color: #D5D7D8; }
+
+/* CV
+ *
+ * /sass/components/_aside.scss - Esthetic style for aside
+ *
+ * coded by Mucht!
+ */
+.sideContent {
+  font-size: 1.2em;
+  float: right; }
+  .sideContent__box {
+    background: transparent linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%) repeat scroll 0 0;
+    padding: 16px; }
+
+/* CV
+ *
+ * /sass/components/_intro.scss - Esthetic style for Intro
+ *
+ * coded by Mucht!
+ */
+.sections__title {
+  color: #67c1f5;
+  font-family: "Motiva Sans", Arial, Helvetica, Verdana, sans-serif;
+  font-size: 18px;
+  background-image: url("http://store.akamai.steamstatic.com/public/images/v6/maincol_gradient_rule.png");
+  background-position: left bottom;
+  background-repeat: no-repeat; }
+
+.sections__section {
+  background: transparent linear-gradient(135deg, rgba(97, 100, 101, 0.3) 0%, rgba(226, 244, 255, 0.3) 100%) repeat scroll 0 0;
+  color: #b8b6b4;
+  display: block;
+  font-size: 12px;
+  padding: 4px 14px;
+  position: relative; }
+
+.sections__date {
+  float: right;
+  color: #FFF; }
+
+/* CV
+ *
+ * /sass/components/_infoPerso.scss - Esthetic style for InfoPerso
+ *
+ * coded by Mucht!
+ */
+.infoPerso__bloc {
+  position: relative;
+  background: rgba(103, 193, 245, 0.1) none repeat scroll 0 0;
+  border-radius: 1px;
+  color: #67c1f5;
+  display: block;
+  padding: 4px 0 0 8px; }
+  .infoPerso__bloc a {
+    color: #67c1f5; }
+  .infoPerso__bloc::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4px 0 4px 0;
+    position: absolute;
+    left: -37px;
+    top: 0;
+    font-family: "Glyphs";
+    font-size: 1.5em;
+    color: #FFF;
+    text-align: center; }
+  .infoPerso__bloc--adress::before {
+    content: ""; }
+  .infoPerso__bloc--mail::before {
+    content: ""; }
+  .infoPerso__bloc--phone::before {
+    content: ""; }
+  .infoPerso__bloc--birth::before {
+    content: ""; }
+  .infoPerso__bloc--licence::before {
+    content: ""; }
+
+/* CV
+ *
+ * /sass/components/_languages.scss - Esthetic style for langages
+ *
+ * coded by Mucht!
+ */
+.table__body {
+  display: table-row-group;
+  vertical-align: middle; }
+
+.table__tableRow {
+  display: table-row;
+  vertical-align: inherit;
+  border-bottom: 1px solid #61686d; }
+
+.table__headerCol {
+  text-align: left;
+  padding: 3px 0; }
+
+.table__bodyCol {
+  padding: 3px 0;
+  font-family: "Glyphs";
+  color: #67c1f5; }
+  .table__bodyCol--header {
+    padding: 0;
+    font-family: "Motiva Sans", Arial, Helvetica, Verdana, sans-serif;
+    color: #b8b6b4; }
+
+/* CV
+ *
+ * /sass/components/_footer.scss - Esthetic style for footer element
+ *
+ * coded by Mucht!
+ */
+.footer {
+  padding: 40px 0 1px;
+  background: transparent linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%) repeat scroll 0 0; }
+
+.footerElem__button {
+  background: rgba(103, 193, 245, 0.2) none repeat scroll 0 0;
+  border-radius: 2px;
+  color: #67c1f5;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 15px; }
+  .footerElem__button:hover {
+    background: linear-gradient(135deg, #4AABEE 0%, #417a9b 100%) repeat scroll 0 0;
+    color: #FFF; }
+
+.footerElem__links {
+  font-size: 13px;
+  color: #BDD4DF;
+  padding: 0 1em;
+  border-right: 1px solid #B6B7C1; }
+  .footerElem__links:first-child {
+    padding-left: 0; }
+  .footerElem__links:last-child {
+    border-right: none; }
+  .footerElem__links--nav {
+    font-size: 12px; }
+  .footerElem__links:hover {
+    color: #FFF; }
+
+.footerElem__icons {
+  font-family: "Glyphs";
+  color: #67c1f5; }
+
+.signature {
+  color: #61686d;
+  text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */

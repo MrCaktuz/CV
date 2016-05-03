@@ -8,6 +8,25 @@
 
 html {
 	background: $mainBackgroundColor;
-    font: normal 62.5%/1.25 $openSansStack;
-    color: $laborTextColor;
+    font: normal 62.5%/1.25 $motivaStack;
+    color: $laborColor;
+}
+a{
+    color: $linksColor;
+    text-decoration: none;
+}
+.hidden{
+    display: none;
+}
+
+.clear::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.mainWrap{
+    background-image: url("#{$imgPath}bckg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }

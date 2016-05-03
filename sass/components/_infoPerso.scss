@@ -1,0 +1,46 @@
+/* CV
+ *
+ * /sass/components/_infoPerso.scss - Esthetic style for InfoPerso
+ *
+ * coded by Mucht!
+ */
+
+.infoPerso{
+    &__bloc{
+        position: relative;
+        background: rgba(103, 193, 245, 0.1) none repeat scroll 0 0;
+        border-radius: 1px;
+        color: $navColor;
+        display: block;
+        padding: 4px 0 0 8px;
+        a{
+            color: $navColor;
+        }
+        &::before{
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 4px 0 4px 0;
+            position: absolute;
+            left: -37px;
+            top: 0;
+            font-family: $glyphs;
+            font-size: 1.5em;
+            color: $linksColor;
+            text-align: center;
+        }
+        &--adress::before{
+            content: "";
+        }
+        &--mail::before{
+            content: "";
+        }
+        &--phone::before{
+            content: "";
+        }
+        &--birth::before{
+            content: "";
+        }
+        &--licence::before{
+            content: "";
+        }
+    }
+}

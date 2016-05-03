@@ -1,0 +1,47 @@
+/* CV
+ *
+ * /sass/objects/_intro.scss - Non Esthetic style for Intro
+ *
+ * coded by Mucht!
+ */
+
+.mainWrap{
+    padding-top: 30px;
+    .topContent{
+        margin: 30px auto 0;
+        .title{
+            width: $widthDesktop;
+            margin: 0 auto;
+            .breadcrumb{
+                &__icon{
+
+                }
+            }
+            .name{
+                min-height: 46px;
+            }
+        }
+        .wrap{
+            width: $widthDesktop;
+            margin: 0 auto;
+            .bcg{
+                width: $widthDesktop;
+                margin: 0 auto;
+                .persoInfo{
+                    width: 324px;
+                    &__img{
+                        width: 100%;
+                    }
+                    &__description{
+                        margin-top: 10px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .legend{
+        width: $widthDesktop;
+        margin: 0 auto;
+    }
+}

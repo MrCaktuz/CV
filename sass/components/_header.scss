@@ -1,0 +1,70 @@
+/* CV
+ *
+ * /sass/components/_header.scss - Esthetic style for header
+ *
+ * coded by Mucht!
+ */
+
+.globalHeader{
+    background: $headerBckgroundColor;
+    font-family: $motivaStack;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    .content{
+        position: relative;
+        .logo{
+            float: left;
+            padding-top: 30px;
+        }
+        .globalActions{
+            color: #b8b6b4;
+            font-size: 11px;
+            line-height: 21px;
+            position: absolute;
+            right: 0;
+            top: 6px;
+            .globalActionMenu{
+                display: inline-block;
+                vertical-align: middle;
+                .hire{
+                    position: relative;
+                    background-image: url( "#{$imgPath}iconeHire.png" );
+                    background-position: 0 -21px;
+                    background-repeat: repeat-x;
+                    color: $bottonColor;
+                    display: inline-block;
+                    font-weight: normal;
+                    line-height: 21px;
+                    padding-left: 27px;
+                    padding-right: 7px;
+                    text-decoration: none;
+                }
+                .hire::before{
+                    content: "coucou";
+                    color: transparent;
+                    position: absolute;
+                    left: 0;
+                    display: block;
+                    background-image: url( "#{$imgPath}iconeHire.png" );
+                    background-position: 0 1px;
+                    background-repeat: no-repeat;
+                }
+            }
+            .contact{
+                color: $laborColor;
+                padding-left: 10px;
+            }
+            .contact::after{
+                content: "|";
+                color: $laborColor;
+                padding: 0 10px;
+            }
+            .langue::after{
+                content: "";
+                font-family: $glyphs;
+                padding-left: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+/* CV
+ *
+ * /sass/objects/_aside.scss - Non Esthetic style for aside elements
+ *
+ * coded by Mucht!
+ */
+
+.sideContent{
+    width: $widthAside;
+    &__box{
+        margin: 0 0 8px 0;
+    }
+}

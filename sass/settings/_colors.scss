@@ -6,19 +6,25 @@
  * started at 17/02/2016
  */
 
-$mainColor: ;
-$lightMainColor: ;
-$darkMainColor: ;
+$mainBackgroundColor: #1B2838;
+$headerBckgroundColor: #171a21;
+$hoverBackgroundColor: #4AABEE;
+$gradientBackgroundColor: #417a9b;
+$navBackground: rgba(103, 193, 245, 0.4);
 
-$focusColor: ;
-$darkFocusColor: ;
+$borderColor: #000;
 
-$mainBackgroundColor: ;
-$headerBackgroundColor: $lightMainColor;
-
-$headingTextColor: ;
-$laborTextColor: ;
-$menuTextColor: ;
-
-$linkColor: ;
-$hoverLinkColor: darken( $linkColor, 25% );
+$laborColor: #b8b6b4;
+$bottonColor: #e5e4dc;
+$navColor: #67c1f5;
+$linksColor: #FFF;
+$placeHolderColor: #305d8a;
+$breadcrumbColor: #8f98a0;
+$breadcrumbSeparatorsColor: #61686d;
+$lightTextColor: #B6B7C1;
+$legendColor:#BDD4DF;
+$titleColor: $navColor;
+$languagesIconColor: $navColor;
+$languageSeparatorsColor: $breadcrumbSeparatorsColor;
+$copyColor: #61686d;
+$galeryActiveColor: #D5D7D8;
